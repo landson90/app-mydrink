@@ -2,6 +2,7 @@ import { CardLater } from "../components/CardLater";
 import { CardMain } from "../components/CardMain";
 import { Header } from "../components/Header";
 import { List } from "../components/List";
+import { Table } from "../components/Table";
 
 export function HomeView() {
   return (
@@ -18,7 +19,9 @@ export function HomeView() {
           </CardLater>
         </section>
         <section>
-          <CardMain />
+          <CardMain>
+            <Table />
+          </CardMain>
         </section>
       </div>
     </>

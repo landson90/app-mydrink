@@ -1,7 +1,9 @@
-export function CardMain() {
-  return (
-    <div className="h-44 w-64	 bg-slate-100 rounded-lg border-solid border-2">
-      <h1>teste</h1>
-    </div>
-  );
+import { ReactNode } from "react";
+
+interface CardMainProps {
+  children: ReactNode;
+}
+
+export function CardMain({ children }: CardMainProps) {
+  return <div className="h-44 w-full	 bg-slate-100 rounded-lg">{children}</div>;
 }
