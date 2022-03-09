@@ -1,7 +1,7 @@
 export function List() {
   return (
-    <div className="p-2 flex flex-col justify-center">
-      <h3 className="text-2xl font-bold text-center">Categorias</h3>
+    <div className="p-2 flex flex-col justify-center mt-10">
+      <h3 className="text-2xl font-bold text-center mb-3">Categorias</h3>
       <hr />
       <ul className="mt-2 flex flex-col items-center mt-5">
         <li>

@@ -1,16 +1,23 @@
 import { CardLater } from "../components/CardLater";
+import { CardMain } from "../components/CardMain";
 import { Header } from "../components/Header";
 import { List } from "../components/List";
 
 export function HomeView() {
   return (
     <>
-      <Header title="MyDrynks" />
-      <div className="justify-around bg-slate-100 p-3 h-screen grid gap-4 grid-cols-2">
-        <CardLater>
-          <List />
-        </CardLater>
-        <div>conteudo principal</div>
+      <div className="h-40 w-full flex justify-center items-center">
+        <section>
+          <Header title="MyDrink" />
+        </section>
+      </div>
+      <div className="bg-slate-100 h-screen flex gap-20 p-10">
+        <section>
+          <CardLater>
+            <List />
+          </CardLater>
+        </section>
+        <section>conteudo</section>
       </div>
     </>
   );
