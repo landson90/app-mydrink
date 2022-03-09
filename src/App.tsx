@@ -1,7 +1,7 @@
-import { Header } from "./components/Header";
+import { HomeView } from "./view/Home.view";
 
 function App() {
-  return <Header title="MyDrynk-app" />;
+  return <HomeView />;
 }
 
 export default App;
