@@ -26,6 +26,7 @@ export function Table() {
           <div
             className="flex flex-col justify-around items-center bg-zinc-50 w-56 h-70
           border-solid border-2 rounded-lg group"
+            key={d.strDrink}
           >
             <header className="flex justify-center">
               <img

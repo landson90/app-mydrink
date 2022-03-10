@@ -30,7 +30,7 @@ export function HomeView() {
       <div className="flex gap-7 p-10">
         <section>
           <CardLater>
-            <List categories={categories} />
+            <List />
           </CardLater>
         </section>
         <section>
