@@ -1,7 +1,7 @@
-import { HomeView } from "./view/Home.view";
+import { Home } from "./pages/Home";
 
 function App() {
-  return <HomeView />;
+  return <Home />;
 }
 
 export default App;
