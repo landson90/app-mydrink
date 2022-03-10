@@ -7,6 +7,9 @@ class ApiService {
   static allDrinksByCategory(category: string) {
     return api.get(`/filter.php?c=${category}`);
   }
+  static findByDrink(id?: string) {
+    return api.get(`/lookup.php?i=${id}`);
+  }
 }
 
 export default ApiService;
