@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { api } from "../../core/axios/api";
+import { DrinkContext } from "../../core/contextApi/DrinkContext";
 import ApiService from "../../core/services/api.service";
 
 interface Drinks {
@@ -9,16 +10,8 @@ interface Drinks {
 }
 
 export function Table() {
-  const [drinks, setDrinks] = useState<Drinks[]>([]);
+  const { drinks } = useContext(DrinkContext);
 
-  useEffect(() => {
-    ApiService.allDrinksByCategory("a").then((response) => {
-      if (response.data) {
-        setDrinks(response.data.drinks);
-      }
-      console.log(drinks);
-    });
-  }, []);
   return (
     <div className="flex gap-1 flex-wrap justify-around">
       {drinks.map((d) => {
