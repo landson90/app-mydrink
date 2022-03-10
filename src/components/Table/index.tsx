@@ -36,7 +36,10 @@ export function Table() {
             </header>
             <section className="flex flex-col justify-around items-center mt-2">
               <h3 className="italic-">{d.strDrink}</h3>
-              <button className="mt-2">Detalhes</button>
+
+              <a className="text-sky-700 font-bold  hover:border-lime-600  hover:border-b-2 hover:text-sky-900 transition ease-in-out delay-150 duration-100">
+                Detalhes
+              </a>
             </section>
           </div>
         );

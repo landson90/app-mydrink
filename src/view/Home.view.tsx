@@ -27,7 +27,7 @@ export function HomeView() {
           <Header title="MyDrink" />
         </section>
       </div>
-      <div className="bg-slate-100 h-screen w-screen flex gap-20 p-10">
+      <div className="flex gap-7 p-10">
         <section>
           <CardLater>
             <List categories={categories} />
